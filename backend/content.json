@@ -1,0 +1,97 @@
+{
+  "title": "너의 인생 책은? 5초 책 취향 테스트",
+  "questions": [
+    {
+      "id": 1,
+      "text": "주말에 뭐 하고 싶어?",
+      "options": [
+        { "label": "A", "text": "집에서 아무것도 안 하고 쉬기", "tag": "healing" },
+        { "label": "B", "text": "옛날 사진첩 보며 추억 여행", "tag": "growth" },
+        { "label": "C", "text": "넷플릭스 스릴러·범죄물 정주행", "tag": "thriller" },
+        { "label": "D", "text": "상상 속 다른 세계로 떠나는 상상", "tag": "fantasy" },
+        { "label": "E", "text": "자기계발 콘텐츠 보며 계획 세우기", "tag": "selfhelp" }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "스트레스 받을 때 나는?",
+      "options": [
+        { "label": "A", "text": "매운 떡볶이 먹으면서 운다", "tag": "healing" },
+        { "label": "B", "text": "옛 친구한테 연락한다", "tag": "growth" },
+        { "label": "C", "text": "무서운 영화 보면서 잊는다", "tag": "thriller" },
+        { "label": "D", "text": "혼자만의 상상에 빠진다", "tag": "fantasy" },
+        { "label": "E", "text": "문제 원인 분석하고 해결책부터 찾는다", "tag": "selfhelp" }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "친구들이 나를 표현한다면?",
+      "options": [
+        { "label": "A", "text": "감성적이고 여린 사람", "tag": "healing" },
+        { "label": "B", "text": "순수하고 서툰 사람", "tag": "growth" },
+        { "label": "C", "text": "예측불가, 반전 있는 사람", "tag": "thriller" },
+        { "label": "D", "text": "엉뚱하고 상상력 풍부한 사람", "tag": "fantasy" },
+        { "label": "E", "text": "계획적이고 목표지향적인 사람", "tag": "selfhelp" }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "최근 가장 많이 한 생각은?",
+      "options": [
+        { "label": "A", "text": "그냥 좀 쉬고 싶다", "tag": "healing" },
+        { "label": "B", "text": "나 잘 크고 있나", "tag": "growth" },
+        { "label": "C", "text": "저 사람 뭔가 수상한데", "tag": "thriller" },
+        { "label": "D", "text": "다른 세상엔 뭐가 있을까", "tag": "fantasy" },
+        { "label": "E", "text": "올해 목표 달성해야 하는데", "tag": "selfhelp" }
+      ]
+    },
+    {
+      "id": 5,
+      "text": "이상적인 하루는?",
+      "options": [
+        { "label": "A", "text": "아무 약속 없이 늘어지게 자기", "tag": "healing" },
+        { "label": "B", "text": "오랜 친구랑 옛날 얘기하기", "tag": "growth" },
+        { "label": "C", "text": "하루종일 추리소설 읽기", "tag": "thriller" },
+        { "label": "D", "text": "새로운 곳 발견하고 탐험하기", "tag": "fantasy" },
+        { "label": "E", "text": "하루 계획 완벽히 실행하기", "tag": "selfhelp" }
+      ]
+    }
+  ],
+  "results": {
+    "healing": {
+      "book": "죽고 싶지만 떡볶이는 먹고 싶어",
+      "author": "백세희",
+      "publisher": "흔",
+      "blurb": "정신과 상담 기록을 바탕으로 쓴 에세이. 무기력하고 예민한 날에도 삶은 그럭저럭 계속된다는 걸 담담하게 보여줘요.",
+      "buyLink": "https://www.aladin.co.kr/search/wsearchresult.aspx?SearchWord=%EC%A3%BD%EA%B3%A0%20%EC%8B%B6%EC%A7%80%EB%A7%8C%20%EB%96%A1%EB%B3%B6%EC%9D%B4%EB%8A%94%20%EB%A8%B9%EA%B3%A0%20%EC%8B%B6%EC%96%B4"
+    },
+    "growth": {
+      "book": "아몬드",
+      "author": "손원평",
+      "publisher": "창비",
+      "blurb": "감정을 느끼지 못하는 소년이 세상과 부딪히며 조금씩 마음을 배워가는 성장소설. 담백한 문장이 오래 남아요.",
+      "buyLink": "https://www.aladin.co.kr/search/wsearchresult.aspx?SearchWord=%EC%95%84%EB%AA%AC%EB%93%9C%20%EC%86%90%EC%9B%90%ED%8F%89"
+    },
+    "thriller": {
+      "book": "종의 기원",
+      "author": "정유정",
+      "publisher": "은행나무",
+      "blurb": "기억을 잃은 주인공의 시점으로 전개되는 심리 스릴러. 마지막 장 덮을 때까지 긴장 놓을 수 없어요.",
+      "buyLink": "https://www.aladin.co.kr/search/wsearchresult.aspx?SearchWord=%EC%A2%85%EC%9D%98%20%EA%B8%B0%EC%9B%90%20%EC%A0%95%EC%9C%A0%EC%A0%95"
+    },
+    "fantasy": {
+      "book": "달러구트 꿈 백화점",
+      "author": "이미예",
+      "publisher": "팩토리나인",
+      "blurb": "잠든 사람들에게 꿈을 파는 백화점 이야기. 따뜻하고 몽환적인 상상력이 힐링을 줘요.",
+      "buyLink": "https://www.aladin.co.kr/search/wsearchresult.aspx?SearchWord=%EB%8B%AC%EB%9F%AC%EA%B5%AC%ED%8A%B8%20%EA%BF%88%20%EB%B0%B1%ED%99%94%EC%A0%90"
+    },
+    "selfhelp": {
+      "book": "아주 작은 습관의 힘",
+      "author": "제임스 클리어",
+      "publisher": "비즈니스북스",
+      "blurb": "작은 습관 하나가 인생을 어떻게 바꾸는지 과학적 근거와 함께 설명하는 자기계발 스테디셀러.",
+      "buyLink": "https://www.aladin.co.kr/search/wsearchresult.aspx?SearchWord=%EC%95%84%EC%A3%BC%20%EC%9E%91%EC%9D%80%20%EC%8A%B5%EA%B4%80%EC%9D%98%20%ED%9E%98"
+    }
+  }
+}
