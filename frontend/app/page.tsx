@@ -18,7 +18,6 @@ type Result = {
 type Content = {
   title: string;
   questions: Question[];
-  results: Record<string, Result>;
 };
 
 export default function Home() {
@@ -26,6 +25,7 @@ export default function Home() {
   const [step, setStep] = useState(0);
   const [scores, setScores] = useState<Record<string, number>>({});
   const [resultTag, setResultTag] = useState<string | null>(null);
+  const [result, setResult] = useState<Result | null>(null);
 
   useEffect(() => {
     fetch(`${API_URL}/api/content`)
@@ -35,6 +35,14 @@ export default function Home() {
 
     fetch(`${API_URL}/api/view`, { method: "POST" }).catch(() => {});
   }, []);
+
+  useEffect(() => {
+    if (!resultTag) return;
+    fetch(`${API_URL}/api/result/${resultTag}`)
+      .then((res) => res.json())
+      .then(setResult)
+      .catch(() => {});
+  }, [resultTag]);
 
   if (!content) {
     return (
@@ -61,7 +69,13 @@ export default function Home() {
   };
 
   if (resultTag) {
-    const result = content.results[resultTag];
+    if (!result) {
+      return (
+        <main className="flex min-h-screen items-center justify-center">
+          <p>책 고르는 중...</p>
+        </main>
+      );
+    }
     return (
       <main className="mx-auto flex min-h-screen max-w-md flex-col items-center justify-center gap-6 p-8 text-center">
         <p className="text-sm text-gray-500">당신에게 어울리는 책은</p>

@@ -4,8 +4,10 @@ import sqlite3
 from datetime import datetime, timezone
 from pathlib import Path
 
-from fastapi import FastAPI, Request
+from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
+
+import aladin
 
 BASE_DIR = Path(__file__).parent
 DB_PATH = BASE_DIR / "stats.db"
@@ -64,6 +66,13 @@ def health():
 def get_content():
     with open(CONTENT_PATH, encoding="utf-8") as f:
         return json.load(f)
+
+
+@app.get("/api/result/{tag}")
+def get_result(tag: str):
+    if tag not in aladin.TAG_QUERIES:
+        raise HTTPException(status_code=404, detail="unknown tag")
+    return aladin.get_book_for_tag(tag)
 
 
 @app.post("/api/view")
