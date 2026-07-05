@@ -54,6 +54,7 @@ def _fetch_candidates(tag: str) -> list[dict]:
             "publisher": item["publisher"],
             "blurb": (item.get("description") or "").strip() or f"{query} 분야 추천작.",
             "buyLink": item["link"],
+            "cover": item.get("cover") or "",
         }
         for item in items
         if item.get("title") and item.get("link")
@@ -78,3 +79,17 @@ def get_book_for_tag(tag: str) -> dict:
             return _load_fallback(tag)
 
     return random.choice(candidates)
+
+
+def get_top_books(scores: dict[str, int], limit: int = 3) -> list[dict]:
+    ranked_tags = sorted(
+        (t for t in scores if t in TAG_QUERIES and scores[t] > 0),
+        key=lambda t: scores[t],
+        reverse=True,
+    )[:limit]
+
+    results = []
+    for tag in ranked_tags:
+        book = get_book_for_tag(tag)
+        results.append({**book, "tag": tag, "score": scores[tag]})
+    return results

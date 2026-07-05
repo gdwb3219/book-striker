@@ -1,3 +1,7 @@
 stats.db
 __pycache__/
 .venv/
+.env
+personas_raw.json
+anchors.json
+personas.curated.json.bak

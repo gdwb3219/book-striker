@@ -27,13 +27,11 @@ export default function ShareButtons({
   // 필요해서 스킬이 대신 만들 수 없음. 키 받으면 Kakao.Share.sendDefault 붙이면 됨.
 
   return (
-    <div className="flex gap-3">
-      <button
-        onClick={handleShare}
-        className="rounded-lg bg-black px-4 py-2 text-white"
-      >
-        공유하기
-      </button>
-    </div>
+    <button
+      onClick={handleShare}
+      className="rounded-full bg-gradient-to-r from-indigo-600 to-fuchsia-600 px-5 py-2.5 text-sm font-medium text-white shadow-md shadow-indigo-200 transition hover:from-indigo-500 hover:to-fuchsia-500 hover:shadow-lg"
+    >
+      공유하기
+    </button>
   );
 }

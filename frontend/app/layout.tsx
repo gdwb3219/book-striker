@@ -1,10 +1,16 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-const TITLE = "너의 인생 책은? 5초 책 취향 테스트";
-const DESCRIPTION = "5가지 질문에 답하고 지금 나에게 필요한 한국 책 한 권을 추천받아보세요.";
+const TITLE = "유튜브 취향으로 찾는 내 인생 유튜버 & 책";
+const DESCRIPTION =
+  "9개 질문에 답하면 당신과 가장 잘 맞는 유튜버와, 그 팬들이 사랑하는 책 3권을 추천해드려요.";
+
+// Production URL for absolute OG/twitter image links. Set NEXT_PUBLIC_SITE_URL
+// in Vercel (e.g. https://book-striker.vercel.app); falls back to localhost.
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: TITLE,
   description: DESCRIPTION,
   openGraph: {

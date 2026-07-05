@@ -1,0 +1,18 @@
+# secrets — never bake into the image (set ALLOWED_ORIGIN as a Fly secret)
+.env
+.env.example
+
+# local state / caches
+stats.db
+__pycache__/
+.venv/
+
+# build-time only scripts + artifacts (not needed at runtime)
+build_personas.py
+verify_anchors.py
+build_pool.py
+enrich_books.py
+personas_raw.json
+anchors.json
+anchors.txt
+personas.curated.json.bak

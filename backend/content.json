@@ -1,59 +1,98 @@
 {
-  "title": "너의 인생 책은? 5초 책 취향 테스트",
+  "title": "유튜브 취향으로 찾는 내 인생 유튜버 & 책",
+  "subtitle": "9개 질문에 답하면, 당신과 가장 잘 맞는 유튜버와 그 팬들이 사랑하는 책 3권을 추천해드려요.",
   "questions": [
     {
       "id": 1,
-      "text": "주말에 뭐 하고 싶어?",
+      "text": "사람들과 함께 있을 때 당신은?",
+      "hint": "MBTI 첫 글자 E(외향)·I(내향) — 에너지를 어디서 얻는지에 대한 질문이에요.",
       "options": [
-        { "label": "A", "text": "집에서 아무것도 안 하고 쉬기", "tag": "healing" },
-        { "label": "B", "text": "옛날 사진첩 보며 추억 여행", "tag": "growth" },
-        { "label": "C", "text": "넷플릭스 스릴러·범죄물 정주행", "tag": "thriller" },
-        { "label": "D", "text": "상상 속 다른 세계로 떠나는 상상", "tag": "fantasy" },
-        { "label": "E", "text": "자기계발 콘텐츠 보며 계획 세우기", "tag": "selfhelp" }
+        { "label": "E", "text": "여럿이 어울릴 때 에너지가 차오른다", "weights": { "ei": 1.6 } },
+        { "label": "I", "text": "혼자만의 시간에 충전된다", "weights": { "ei": -1.6 } }
       ]
     },
     {
       "id": 2,
-      "text": "스트레스 받을 때 나는?",
+      "text": "더 관심이 가는 쪽은?",
+      "hint": "MBTI N(직관)·S(감각) — 상상·가능성에 끌리는지, 현실·경험에 끌리는지예요.",
       "options": [
-        { "label": "A", "text": "매운 떡볶이 먹으면서 운다", "tag": "healing" },
-        { "label": "B", "text": "옛 친구한테 연락한다", "tag": "growth" },
-        { "label": "C", "text": "무서운 영화 보면서 잊는다", "tag": "thriller" },
-        { "label": "D", "text": "혼자만의 상상에 빠진다", "tag": "fantasy" },
-        { "label": "E", "text": "문제 원인 분석하고 해결책부터 찾는다", "tag": "selfhelp" }
+        { "label": "N", "text": "상상, 의미, 앞으로의 가능성", "weights": { "ns": 1.6 } },
+        { "label": "S", "text": "지금의 현실, 구체적인 경험과 사실", "weights": { "ns": -1.6 } }
       ]
     },
     {
       "id": 3,
-      "text": "친구들이 나를 표현한다면?",
+      "text": "중요한 결정을 내릴 때 당신은?",
+      "hint": "MBTI T(사고)·F(감정) — 논리로 판단하는지, 마음·관계로 판단하는지예요.",
       "options": [
-        { "label": "A", "text": "감성적이고 여린 사람", "tag": "healing" },
-        { "label": "B", "text": "순수하고 서툰 사람", "tag": "growth" },
-        { "label": "C", "text": "예측불가, 반전 있는 사람", "tag": "thriller" },
-        { "label": "D", "text": "엉뚱하고 상상력 풍부한 사람", "tag": "fantasy" },
-        { "label": "E", "text": "계획적이고 목표지향적인 사람", "tag": "selfhelp" }
+        { "label": "T", "text": "논리와 객관적 사실로 판단한다", "weights": { "tf": -1.6 } },
+        { "label": "F", "text": "감정과 사람 사이의 공감을 우선한다", "weights": { "tf": 1.6 } }
       ]
     },
     {
       "id": 4,
-      "text": "최근 가장 많이 한 생각은?",
+      "text": "당신의 일상은 어떤 편인가요?",
+      "hint": "MBTI J(계획)·P(즉흥) — 계획대로 움직이는지, 유연하게 흘러가는지예요.",
       "options": [
-        { "label": "A", "text": "그냥 좀 쉬고 싶다", "tag": "healing" },
-        { "label": "B", "text": "나 잘 크고 있나", "tag": "growth" },
-        { "label": "C", "text": "저 사람 뭔가 수상한데", "tag": "thriller" },
-        { "label": "D", "text": "다른 세상엔 뭐가 있을까", "tag": "fantasy" },
-        { "label": "E", "text": "올해 목표 달성해야 하는데", "tag": "selfhelp" }
+        { "label": "J", "text": "계획을 세우고 지키는 편", "weights": { "jp": 1.6 } },
+        { "label": "P", "text": "그때그때 즉흥적이고 유연한 편", "weights": { "jp": -1.6 } }
       ]
     },
     {
       "id": 5,
-      "text": "이상적인 하루는?",
+      "text": "성별을 알려주세요",
+      "hint": "추천 정확도와 통계에만 쓰이고, 결과를 크게 바꾸지 않아요.",
       "options": [
-        { "label": "A", "text": "아무 약속 없이 늘어지게 자기", "tag": "healing" },
-        { "label": "B", "text": "오랜 친구랑 옛날 얘기하기", "tag": "growth" },
-        { "label": "C", "text": "하루종일 추리소설 읽기", "tag": "thriller" },
-        { "label": "D", "text": "새로운 곳 발견하고 탐험하기", "tag": "fantasy" },
-        { "label": "E", "text": "하루 계획 완벽히 실행하기", "tag": "selfhelp" }
+        { "label": "F", "text": "여성", "weights": {} },
+        { "label": "M", "text": "남성", "weights": {} },
+        { "label": "N", "text": "선택 안 함", "weights": {} }
+      ]
+    },
+    {
+      "id": 6,
+      "text": "연령대를 알려주세요",
+      "options": [
+        { "label": "A", "text": "10대", "weights": { "adv": 0.5, "ns": 0.3 } },
+        { "label": "B", "text": "20대", "weights": { "adv": 0.3, "amb": 0.3 } },
+        { "label": "C", "text": "30대", "weights": { "amb": 0.3, "jp": 0.2 } },
+        { "label": "D", "text": "40대 이상", "weights": { "tf": 0.3, "adv": -0.3 } }
+      ]
+    },
+    {
+      "id": 7,
+      "text": "요즘 유튜브 홈에 가장 자주 뜨는 영상은?",
+      "hint": "알고리즘은 취향의 거울이에요. 가장 자주 보는 걸 골라주세요.",
+      "options": [
+        { "label": "A", "text": "경제·시사 브리핑, 뉴스 해설", "weights": { "ns": 0.5, "tf": -0.9, "amb": 0.7 } },
+        { "label": "B", "text": "해외여행·세계 탐험 브이로그", "weights": { "adv": 1.5, "ns": 0.5, "jp": -0.6 } },
+        { "label": "C", "text": "동기부여·자기계발·커리어", "weights": { "amb": 1.5, "jp": 0.7 } },
+        { "label": "D", "text": "과학·우주·지식 교양", "weights": { "ns": 1.1, "tf": -1.1 } },
+        { "label": "E", "text": "웃긴 예능·개그·밈", "weights": { "ei": 1.3, "tf": 0.4, "amb": -0.5 } },
+        { "label": "F", "text": "게임 방송·서브컬처", "weights": { "ns": 0.9, "ei": -0.4, "amb": -0.4 } },
+        { "label": "G", "text": "먹방·맛집 탐방", "weights": { "tf": 0.9, "ns": -0.9, "adv": -0.4 } },
+        { "label": "H", "text": "잔잔한 일상·힐링 브이로그", "weights": { "ei": -1.1, "tf": 0.9, "adv": -1.1 } }
+      ]
+    },
+    {
+      "id": 8,
+      "text": "요즘 당신의 가장 큰 고민은?",
+      "options": [
+        { "label": "A", "text": "돈과 커리어, 어떻게 더 잘 벌지", "weights": { "amb": 1.3, "tf": -0.5 } },
+        { "label": "B", "text": "인간관계와 외로움", "weights": { "tf": 1.1, "ei": -0.3 } },
+        { "label": "C", "text": "불확실한 미래와 진로", "weights": { "amb": 0.8, "ns": 0.6 } },
+        { "label": "D", "text": "매일이 지루하고 재미없다", "weights": { "adv": 0.7, "ei": 0.5, "amb": -0.4 } },
+        { "label": "E", "text": "너무 지쳐서 쉬고 싶다", "weights": { "adv": -1.1, "tf": 0.6, "amb": -0.7 } }
+      ]
+    },
+    {
+      "id": 9,
+      "text": "이상적인 여행 스타일은?",
+      "options": [
+        { "label": "A", "text": "정처 없이 떠나는 즉흥 배낭여행", "weights": { "adv": 1.6, "jp": -1.1 } },
+        { "label": "B", "text": "분 단위로 짠 완벽한 일정 여행", "weights": { "jp": 1.3, "amb": 0.5 } },
+        { "label": "C", "text": "집콕, 넷플릭스가 최고의 휴식", "weights": { "adv": -1.5, "ei": -0.5 } },
+        { "label": "D", "text": "현지 맛집만 도는 미식 여행", "weights": { "ns": -0.7, "tf": 0.7, "adv": -0.2 } },
+        { "label": "E", "text": "자연 속에서 조용히 힐링", "weights": { "adv": -0.9, "tf": 0.6, "ei": -0.5 } }
       ]
     }
   ]

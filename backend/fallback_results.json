@@ -4,34 +4,39 @@
     "author": "백세희",
     "publisher": "흔",
     "blurb": "정신과 상담 기록을 바탕으로 쓴 에세이. 무기력하고 예민한 날에도 삶은 그럭저럭 계속된다는 걸 담담하게 보여줘요.",
-    "buyLink": "https://www.aladin.co.kr/search/wsearchresult.aspx?SearchWord=%EC%A3%BD%EA%B3%A0%20%EC%8B%B6%EC%A7%80%EB%A7%8C%20%EB%96%A1%EB%B3%B6%EC%9D%B4%EB%8A%94%20%EB%A8%B9%EA%B3%A0%20%EC%8B%B6%EC%96%B4"
+    "buyLink": "https://www.aladin.co.kr/search/wsearchresult.aspx?SearchWord=%EC%A3%BD%EA%B3%A0%20%EC%8B%B6%EC%A7%80%EB%A7%8C%20%EB%96%A1%EB%B3%B6%EC%9D%B4%EB%8A%94%20%EB%A8%B9%EA%B3%A0%20%EC%8B%B6%EC%96%B4",
+    "cover": ""
   },
   "growth": {
     "book": "아몬드",
     "author": "손원평",
     "publisher": "창비",
     "blurb": "감정을 느끼지 못하는 소년이 세상과 부딪히며 조금씩 마음을 배워가는 성장소설. 담백한 문장이 오래 남아요.",
-    "buyLink": "https://www.aladin.co.kr/search/wsearchresult.aspx?SearchWord=%EC%95%84%EB%AA%AC%EB%93%9C%20%EC%86%90%EC%9B%90%ED%8F%89"
+    "buyLink": "https://www.aladin.co.kr/search/wsearchresult.aspx?SearchWord=%EC%95%84%EB%AA%AC%EB%93%9C%20%EC%86%90%EC%9B%90%ED%8F%89",
+    "cover": ""
   },
   "thriller": {
     "book": "종의 기원",
     "author": "정유정",
     "publisher": "은행나무",
     "blurb": "기억을 잃은 주인공의 시점으로 전개되는 심리 스릴러. 마지막 장 덮을 때까지 긴장 놓을 수 없어요.",
-    "buyLink": "https://www.aladin.co.kr/search/wsearchresult.aspx?SearchWord=%EC%A2%85%EC%9D%98%20%EA%B8%B0%EC%9B%90%20%EC%A0%95%EC%9C%A0%EC%A0%95"
+    "buyLink": "https://www.aladin.co.kr/search/wsearchresult.aspx?SearchWord=%EC%A2%85%EC%9D%98%20%EA%B8%B0%EC%9B%90%20%EC%A0%95%EC%9C%A0%EC%A0%95",
+    "cover": ""
   },
   "fantasy": {
     "book": "달러구트 꿈 백화점",
     "author": "이미예",
     "publisher": "팩토리나인",
     "blurb": "잠든 사람들에게 꿈을 파는 백화점 이야기. 따뜻하고 몽환적인 상상력이 힐링을 줘요.",
-    "buyLink": "https://www.aladin.co.kr/search/wsearchresult.aspx?SearchWord=%EB%8B%AC%EB%9F%AC%EA%B5%AC%ED%8A%B8%20%EA%BF%88%20%EB%B0%B1%ED%99%94%EC%A0%90"
+    "buyLink": "https://www.aladin.co.kr/search/wsearchresult.aspx?SearchWord=%EB%8B%AC%EB%9F%AC%EA%B5%AC%ED%8A%B8%20%EA%BF%88%20%EB%B0%B1%ED%99%94%EC%A0%90",
+    "cover": ""
   },
   "selfhelp": {
     "book": "아주 작은 습관의 힘",
     "author": "제임스 클리어",
     "publisher": "비즈니스북스",
     "blurb": "작은 습관 하나가 인생을 어떻게 바꾸는지 과학적 근거와 함께 설명하는 자기계발 스테디셀러.",
-    "buyLink": "https://www.aladin.co.kr/search/wsearchresult.aspx?SearchWord=%EC%95%84%EC%A3%BC%20%EC%9E%91%EC%9D%80%20%EC%8A%B5%EA%B4%80%EC%9D%98%20%ED%9E%98"
+    "buyLink": "https://www.aladin.co.kr/search/wsearchresult.aspx?SearchWord=%EC%95%84%EC%A3%BC%20%EC%9E%91%EC%9D%80%20%EC%8A%B5%EA%B4%80%EC%9D%98%20%ED%9E%98",
+    "cover": ""
   }
 }

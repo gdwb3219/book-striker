@@ -4,10 +4,14 @@ import sqlite3
 from datetime import datetime, timezone
 from pathlib import Path
 
+from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 
-import aladin
+# Load .env before importing modules that read env at import time.
+load_dotenv(Path(__file__).parent / ".env")
+
+import matching
 
 BASE_DIR = Path(__file__).parent
 DB_PATH = BASE_DIR / "stats.db"
@@ -68,11 +72,13 @@ def get_content():
         return json.load(f)
 
 
-@app.get("/api/result/{tag}")
-def get_result(tag: str):
-    if tag not in aladin.TAG_QUERIES:
-        raise HTTPException(status_code=404, detail="unknown tag")
-    return aladin.get_book_for_tag(tag)
+@app.post("/api/match")
+async def post_match(request: Request):
+    body = await request.json()
+    vector = body.get("vector", {})
+    if not isinstance(vector, dict):
+        raise HTTPException(status_code=400, detail="vector must be an object")
+    return matching.match(vector)
 
 
 @app.post("/api/view")
