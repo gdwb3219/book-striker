@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Script from "next/script";
+import { ADSENSE_CLIENT_ID, IS_PLACEHOLDER } from "@/lib/adsense";
 import "./globals.css";
 
 const TITLE = "유튜브 취향으로 찾는 내 인생 유튜버 & 책";
@@ -34,6 +36,19 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko">
+      <head>
+        {/* AdSense site-wide loader — required for site review + serving.
+            Only injected once a real publisher id is configured. */}
+        {!IS_PLACEHOLDER && (
+          <Script
+            id="adsbygoogle-init"
+            async
+            strategy="afterInteractive"
+            crossOrigin="anonymous"
+            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT_ID}`}
+          />
+        )}
+      </head>
       <body>{children}</body>
     </html>
   );

@@ -1,17 +1,13 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { ADSENSE_CLIENT_ID, IS_PLACEHOLDER } from "@/lib/adsense";
 
 declare global {
   interface Window {
     adsbygoogle: unknown[];
   }
 }
-
-const ADSENSE_CLIENT_ID =
-  process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID || "ca-pub-XXXXXXXXXXXXXXXX";
-
-const IS_PLACEHOLDER = ADSENSE_CLIENT_ID.includes("XXXX");
 
 export default function AdSlot({ slot }: { slot?: string }) {
   const insRef = useRef<HTMLModElement>(null);
@@ -41,22 +37,16 @@ export default function AdSlot({ slot }: { slot?: string }) {
     );
   }
 
+  // Loader script lives site-wide in layout.tsx; here we only render the unit.
   return (
-    <>
-      <script
-        async
-        src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT_ID}`}
-        crossOrigin="anonymous"
-      />
-      <ins
-        ref={insRef}
-        className="adsbygoogle"
-        style={{ display: "block", width: "100%" }}
-        data-ad-client={ADSENSE_CLIENT_ID}
-        data-ad-slot={slot || "0000000000"}
-        data-ad-format="auto"
-        data-full-width-responsive="true"
-      />
-    </>
+    <ins
+      ref={insRef}
+      className="adsbygoogle"
+      style={{ display: "block", width: "100%" }}
+      data-ad-client={ADSENSE_CLIENT_ID}
+      data-ad-slot={slot || "0000000000"}
+      data-ad-format="auto"
+      data-full-width-responsive="true"
+    />
   );
 }
